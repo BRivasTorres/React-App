@@ -1,0 +1,60 @@
+button {
+    width: 250px;
+    height: 250px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: black;
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+.boton-click {
+    animation-name: cambiacolorOtro;
+    animation-duration: 5000ms;
+    animation-delay: 2000ms;
+    animation-iteration-count: 10;
+    animation-direction: normal;
+    animation-timing-function: ease;
+}
+
+.boton-reiniciar {
+    animation: cambiacolor2 5000ms ease  2000ms 10  none;
+    /* animation-name: cambiacolor2;
+    animation-duration: 5000ms;
+    animation-delay: 2000ms;
+    animation-iteration-count: 10;
+    animation-direction: normal;
+    animation-timing-function: ease; */
+}
+
+
+@keyframes cambiacolorOtro {
+    0%{
+        background-color: #2192FF;
+    }
+    50% {
+        background-color: #38E54D;
+    }
+    100% {
+        background-color: #9CFF2E;
+    }
+}
+
+@keyframes cambiacolor2 {
+    0% {
+        background-color: #FF577F;
+    }
+    50% {
+        background-color: #FF884B;
+    }
+    100% {
+        background-color: #FFD384;
+    }
+}
